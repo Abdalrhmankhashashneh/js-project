@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contener {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(187, 175, 175);
+    width: 20%;
+    min-height: 20vh;
+    margin: auto;
+    margin-top: 30vh;
+    padding: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-radius: 40px;
+    height: 5vh;
+    width: 90%;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 20px;
+    background-color: bisque;
+    width: 20%;
+}
+
+span {
+    color: brown;
+}
