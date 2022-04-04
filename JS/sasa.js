@@ -228,15 +228,22 @@ if (id) {
                 currentQuiz++;
 
 
+                if (currentQuiz == 9) {
+                    nextBtn.innerHTML = '<span><b>You have finished Technical quiz ,be ready for English Quiz</b></span>';
+                }
+                if (currentQuiz == 14) {
+                    nextBtn.innerHTML = '<span><b>You have finished English quiz ,be ready for IQ Quiz</b></span>';
+                }
+                if (currentQuiz == 10) {
+                    nextBtn.innerHTML = '<button>Next</button>';
+                    document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">English Test :</h2>  <img src="eng.jpg" width="150px" height="100px">';
+                }
+
+                if (currentQuiz == 15) {
+                    document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">IQ Test :</h2>  <img src="IQ.jpg" width="150px" height="100px">';
+                    nextBtn.innerHTML = '<button>Next</button>';
+                }
                 if (currentQuiz < quizData.length) {
-
-                    if (currentQuiz == 10) {
-                        document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">English Test :</h2>  <img src="../img/eng.jpg" width="150px" height="100px">';
-                    }
-
-                    if (currentQuiz == 15) {
-                        document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">IQ Test :</h2>  <img src="../img/IQ.jpg" width="150px" height="100px">';
-                    }
                     loadQuiz();
                 } else {
                     a.result = score;

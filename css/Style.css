@@ -5,7 +5,10 @@
 }
 
 body {
-    background-image: url();
+    background-image: url(/img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 #welcome {
@@ -26,6 +29,12 @@ body {
     margin-top: 30px;
     font-size: 20px;
     font-weight: 800
+}
+
+.info-div {
+    margin-top: 20vh;
+    background-color: rgba(240, 248, 255, 0.9);
+    min-height: 50vh;
 }
 
 .info-div .buttons {
@@ -53,4 +62,29 @@ body {
     background-color: orangered;
     box-shadow: 0 0 15px orangered;
     transform: scale(1.1);
+}
+
+@media (max-width: 320px) {
+    #welcome {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        transition: 0.5s ease;
+        font-size: 15px;
+    }
+
+    #orangelogo {
+        margin-top: 10px;
+        margin-left: -65px;
+    }
+
+    #paragraph {
+        margin-top: 50px;
+        font-size: 13px;
+        font-weight: 400
+    }
+
+    .Stylebtn {
+        margin-top: 50px;
+    }
 }
