@@ -39,7 +39,7 @@ else {
                  </div>`
             }
 
-            document.getElementById("card-rev").style.display = "block";
+            document.getElementById("card-rev").style.display = "flex";
             op = false
             var a1 = document.getElementsByClassName("a")
             var b1 = document.getElementsByClassName("b")
@@ -47,37 +47,45 @@ else {
             var d1 = document.getElementsByClassName("d")
             for (i = 0; i < a.answers.length; i++) {
                 if (a.answers[i] == "a") {
-                    a1[i].style.backgroundColor = "red"
-                    a1[i].innerHTML += "  &nbsp;  &nbsp;  your anwser "
+                    a1[i].style.backgroundColor = "#ff6c6c"
+                    a1[i].style.color = "white"
+                    a1[i].innerHTML += "  your anwser "
                 }
                 if (a.answers[i] == "b") {
-                    b1[i].style.backgroundColor = "red"
+                    b1[i].style.backgroundColor = "#ff6c6c"
+                    b1[i].style.color = "white"
                     b1[i].innerHTML += "  your anwser "
                 }
                 if (a.answers[i] == "c") {
-                    c1[i].style.backgroundColor = "red"
+                    c1[i].style.backgroundColor = "#ff6c6c"
+                    c1[i].style.color = "white"
                     c1[i].innerHTML += "  your anwser "
                 }
                 if (a.answers[i] == "d") {
-                    d1[i].style.backgroundColor = "red"
+                    d1[i].style.backgroundColor = "#ff6c6c"
+                    d1[i].style.color = "white"
                     d1[i].innerHTML += "  your anwser "
                 }
             }
             for (i = 0; i < a.answers.length; i++) {
                 if (a2[i].correct == "a") {
-                    a1[i].style.backgroundColor = "green"
+                    a1[i].style.backgroundColor = "#43d843"
+                    a1[i].style.color = "white"
                     a1[i].innerHTML += "  correct anwser "
                 }
                 if (a2[i].correct == "b") {
-                    b1[i].style.backgroundColor = "green"
+                    b1[i].style.backgroundColor = "#43d843"
+                    b1[i].style.color = "white"
                     b1[i].innerHTML += "  correct anwser "
                 }
                 if (a2[i].correct == "c") {
-                    c1[i].style.backgroundColor = "green"
+                    c1[i].style.backgroundColor = "#43d843"
+                    c1[i].style.color = "white"
                     c1[i].innerHTML += "  correct anwser "
                 }
                 if (a2[i].correct == "d") {
-                    d1[i].style.backgroundColor = "green"
+                    d1[i].style.backgroundColor = "#43d843"
+                    d1[i].style.color = "white"
                     d1[i].innerHTML += "  correct anwser "
                 }
             }
