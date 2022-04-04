@@ -8,44 +8,46 @@
   <title>Result Page</title>
 
   <link rel="stylesheet" href="../css/Result_page.css">
+  <link rel="shortcut icon" href="../img/Orange.png">
 </head>
 
 <body>
 
   <div id="logout">
-    <button class="button logout_btn" onclick="home()">logout</button>
+    <button class="button button1" onclick="home()">logout</button>
   </div>
 
-  <h2>Full stack developer quiz</h2><br>
+  <div class="main"><img src="/img/Orange.png" width="300px" alt=""></div>
 
 
   <div class="row">
     <div class="column">
       <div class="card">
         <h3 id="result">Result:</h3>
-        <p id="ca">Correct Answers: </p>
-        <p id="wa">Wrong Answers: </p>
-        <hr><br>
 
-        <p id="pass">“Congratulation, we will arrange with you the Second interview”</p>
-        <p id="fail">“Unfortunately, you did not fulfill our requirements, Good Luck”</p><br><br><br>
+
+        <p id="pass">“Congratulation“, <br> we will arrange with you the Second interview”</p>
+        <hr><br>
+        <p id="fail">“Unfortunately, <br> you did not fulfill our requirements, Good Luck”</p><br><br><br>
+        <div id="ans_btn">
+          <button class="button button1">Check your answers</button>
+        </div>
+
       </div>
     </div>
 
-    <div id="ans_btn">
-      <button class="button button1">Check your answers</button>
+    <div id="card-rev">
+
+      <div class="q">
+
+      </div>
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+      <div class="d"></div>
+
     </div>
 
-
-
-    <table id="ans_table">
-      <tr>
-        <th>Question</th>
-        <th>Your Answer</th>
-        <th>Correct Answer</th>
-      </tr>
-
-    </table>
 
 
     <script src="../JS/Result_page.js"></script>

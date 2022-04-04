@@ -26,7 +26,7 @@ if (id) {
                 correct: "d",
             },
             {
-                question: "3-Which of these elements are all <table> elements?",
+                question: "3-Which of these elements are all < table > elements?",
                 a: "table,tr,tt",
                 b: "table,tr,td",
                 c: "table,head,tfoot",

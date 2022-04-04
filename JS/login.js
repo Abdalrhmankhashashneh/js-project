@@ -20,7 +20,7 @@ else {
             if (checkemail(email, em) && checkpass(password, pas)) {
                 localStorage.setItem("user_id", user_id)
                 if (ob.result == 0) {
-                    location.href = "sasa.html"
+                    location.href = "welcomepage.html"
                 }
                 else {
                     location.href = "Result_page.html"
