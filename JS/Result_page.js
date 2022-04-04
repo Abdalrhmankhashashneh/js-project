@@ -10,7 +10,7 @@ let p = document.getElementById("pass");
 let btn = document.getElementById("ans_btn");
 let ans = document.getElementById("ans_table");
 document.getElementById("result").innerHTML = " Result : " + result
-document.getElementById("ca").innerHTML = " Correct Answers: " + result
+document.getElementById("ca").innerHTML = " Correct Answers: " + result + "// 20 "
 document.getElementById("wa").innerHTML = " Wrong Answers: " + (20 - result)
 
 if (result >= 10) {
