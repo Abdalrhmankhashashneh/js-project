@@ -40,10 +40,10 @@ function home() {
     var id = localStorage.getItem("user_id")
     if (id) {
         localStorage.removeItem("user_id")
-        location.href = "../login.html"
+        location.href = "login.html"
     }
     else {
-        location.href = "../welcomepage/HomePage/Index.html"
+        location.href = "../Index.html"
     }
 }
 

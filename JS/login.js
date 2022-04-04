@@ -1,6 +1,6 @@
 var id = localStorage.getItem("user_id")
 if (id) {
-    location.href = "resultpage/Result_page.html"
+    location.href = "Result_page.html"
 }
 else {
     var rege = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
@@ -20,10 +20,10 @@ else {
             if (checkemail(email, em) && checkpass(password, pas)) {
                 localStorage.setItem("user_id", user_id)
                 if (ob.result == 0) {
-                    location.href = "quizpage/sasa.html"
+                    location.href = "sasa.html"
                 }
                 else {
-                    location.href = "resultpage/Result_page.html"
+                    location.href = "Result_page.html"
                 }
             }
             else {

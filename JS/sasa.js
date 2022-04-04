@@ -231,27 +231,27 @@ if (id) {
                 if (currentQuiz < quizData.length) {
 
                     if (currentQuiz == 10) {
-                        document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">English Test :</h2>  <img src="eng.jpg" width="150px" height="100px">';
+                        document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">English Test :</h2>  <img src="../img/eng.jpg" width="150px" height="100px">';
                     }
 
                     if (currentQuiz == 15) {
-                        document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">IQ Test :</h2>  <img src="IQ.jpg" width="150px" height="100px">';
+                        document.getElementById('title').innerHTML = '<h2 style =" font-weight: 900; font-size: xx-large; ">IQ Test :</h2>  <img src="../img/IQ.jpg" width="150px" height="100px">';
                     }
                     loadQuiz();
                 } else {
                     a.result = score;
                     a.answers = an;
                     localStorage.setItem("users", JSON.stringify(x1));
-                    location.href = "../resultpage/Result_page.html"
+                    location.href = "Result_page.html"
                 }
             }
         })
     }
     else {
-        location.href = "resultpage/Result_page.html"
+        location.href = "Result_page.html"
     }
 }
 else {
-    location.href = "../login.html"
+    location.href = "login.html"
 }
 

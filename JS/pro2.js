@@ -135,7 +135,7 @@ const signup = (e) => {
     if (!op) {
       x1.userdata.push(x)
       localStorage.setItem("users", JSON.stringify(x1));
-      location.href = "../login.html"
+      location.href = "login.html"
     }
   }
 
