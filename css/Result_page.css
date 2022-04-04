@@ -121,6 +121,50 @@ th {
   color: white;
 }
 
+#card-rev {
+  display: none;
+
+}
+
+.card-rev {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background-color: rgb(237, 247, 247);
+}
+
+.an {
+  width: 100%;
+}
+
+.q,
+.a,
+.b,
+.c,
+.d {
+  width: 50%;
+  min-height: 10vh;
+  font-size: large;
+  padding: 25px;
+
+}
+
+.a {}
+
+.b {}
+
+.c {}
+
+.d {}
+
+.q {
+
+  margin-bottom: 25px;
+}
+
 /***************************************************************************/
 /* Responsive columns */
 /* @media screen and (max-width: 600px) {

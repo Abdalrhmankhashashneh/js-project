@@ -1,46 +1,104 @@
-
 var id = localStorage.getItem("user_id")
-var x1 = JSON.parse(localStorage.getItem("users"))
-var x2 = JSON.parse(localStorage.getItem("question"))
-var a = x1.userdata[id];
-var a2 = x2.q;
-var result = a.result;
-let f = document.getElementById("fail");
-let p = document.getElementById("pass");
-let btn = document.getElementById("ans_btn");
-let ans = document.getElementById("ans_table");
-document.getElementById("result").innerHTML = " Result <br><br>" + "<span>" + result + " out of  20 " + "</span>"
-if (result >= 10) {
-    p.style.display = "inline";
+if (id === null) {
+    location.href = ("/Index.html")
 }
-
 else {
-    f.style.display = "inline";
-}
 
+    var x1 = JSON.parse(localStorage.getItem("users"))
+    var x2 = JSON.parse(localStorage.getItem("question"))
+    var a = x1.userdata[id];
+    var a2 = x2.q;
+    var result = a.result;
+    let f = document.getElementById("fail");
+    let p = document.getElementById("pass");
+    let btn = document.getElementById("ans_btn");
+    let ans = document.getElementById("ans_table");
+    document.getElementById("result").innerHTML = " Result <br><br>" + "<span>" + result + " out of  20 " + "</span>"
 
-/***************************************************************** */
-var op = true;
-btn.onclick = function showAnswers() {
-    if (op) {
-        for (i = 0; i < a.answers.length; i++) {
-            var c = a2[i];
-            var c2 = a.answers;
-            ans.innerHTML += " <tr> " + " <td> " + c.question + " </td> " + " <td> " + c2[i] + " </td> " + " <td> " + c.correct + " </td> " + " </tr> "
-        }
-        ans.style.display = "table";
-        op = false
-    }
-}
-
-function home() {
-    var id = localStorage.getItem("user_id")
-    if (id) {
-        localStorage.removeItem("user_id")
-        location.href = "login.html"
+    if (result >= 10) {
+        p.style.display = "inline";
     }
     else {
-        location.href = "../Index.html"
+        f.style.display = "inline";
+    }
+
+
+    /***************************************************************** */
+    var op = true;
+    btn.onclick = function showAnswers() {
+        if (op) {
+            for (let i = 0; i < a2.length; i++) {
+                document.getElementById("card-rev").innerHTML += `<div class="card-rev">
+
+                 <div class="q">${a2[i].question}</div> 
+                 <div class="a">${"a-" + a2[i].a}</div> 
+                 <div class="b">${"b-" + a2[i].b}</div>
+                 <div class="c">${"c-" + a2[i].c}</div> 
+                 <div class="d">${"d-" + a2[i].d}</div> 
+                 
+                 </div>`
+            }
+
+            document.getElementById("card-rev").style.display = "block";
+            op = false
+            var a1 = document.getElementsByClassName("a")
+            var b1 = document.getElementsByClassName("b")
+            var c1 = document.getElementsByClassName("c")
+            var d1 = document.getElementsByClassName("d")
+            for (i = 0; i < a.answers.length; i++) {
+                if (a.answers[i] == "a") {
+                    a1[i].style.backgroundColor = "red"
+                    a1[i].innerHTML += "  &nbsp;  &nbsp;  your anwser "
+                }
+                if (a.answers[i] == "b") {
+                    b1[i].style.backgroundColor = "red"
+                    b1[i].innerHTML += "  your anwser "
+                }
+                if (a.answers[i] == "c") {
+                    c1[i].style.backgroundColor = "red"
+                    c1[i].innerHTML += "  your anwser "
+                }
+                if (a.answers[i] == "d") {
+                    d1[i].style.backgroundColor = "red"
+                    d1[i].innerHTML += "  your anwser "
+                }
+            }
+            for (i = 0; i < a.answers.length; i++) {
+                if (a2[i].correct == "a") {
+                    a1[i].style.backgroundColor = "green"
+                    a1[i].innerHTML += "  correct anwser "
+                }
+                if (a2[i].correct == "b") {
+                    b1[i].style.backgroundColor = "green"
+                    b1[i].innerHTML += "  correct anwser "
+                }
+                if (a2[i].correct == "c") {
+                    c1[i].style.backgroundColor = "green"
+                    c1[i].innerHTML += "  correct anwser "
+                }
+                if (a2[i].correct == "d") {
+                    d1[i].style.backgroundColor = "green"
+                    d1[i].innerHTML += "  correct anwser "
+                }
+            }
+        }
+
+    }
+
+
+
+    function home() {
+        var id = localStorage.getItem("user_id")
+        if (id) {
+
+            localStorage.removeItem("user_id")
+            location.href = "login.html"
+
+        }
+        else {
+
+            location.href = "../Index.html"
+
+        }
     }
 }
-
