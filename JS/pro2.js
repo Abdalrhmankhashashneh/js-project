@@ -1,7 +1,4 @@
 
-
-
-
 function user(name, email, password, result, answers) {
   this.name = name;
   this.email = email;
