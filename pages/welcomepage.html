@@ -15,6 +15,7 @@
         <div class="info">
             <img id="orangelogo" src="../img/Orange.png" alt="Orange quiz">
             <h1 id="name">Welcome "NAME" </h1>
+            <p> you will start quiz three parts get ready </p>
         </div>
         <div class="position">
             <a href="sasa.html"><button id="sbtn">Start Quiz</button></a>
@@ -25,8 +26,6 @@
     <script>
         var id = localStorage.getItem("user_id")
         var x1 = JSON.parse(localStorage.getItem("users"))
-
-
         if (id) {
             var a = x1.userdata[id];
             document.getElementById("name").innerHTML = " Welcome " + a.name;

@@ -174,7 +174,7 @@ if (id) {
         if (localStorage.getItem("question") === null) {
             localStorage.setItem("question", JSON.stringify(qu))
         }
-        const quiz = document.getElementById('quiz');
+
         const answerEl = document.querySelectorAll('.answer');
         const questionEl = document.getElementById('question');
         const a_text = document.getElementById('a_text');

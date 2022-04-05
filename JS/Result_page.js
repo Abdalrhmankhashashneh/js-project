@@ -1,6 +1,6 @@
 var id = localStorage.getItem("user_id")
 if (id === null) {
-    location.href = ("/Index.html")
+    location.href = ("../Index.html")
 }
 else {
 
@@ -12,7 +12,6 @@ else {
     let f = document.getElementById("fail");
     let p = document.getElementById("pass");
     let btn = document.getElementById("ans_btn");
-    let ans = document.getElementById("ans_table");
     document.getElementById("result").innerHTML = " Result <br><br>" + "<span>" + result + " out of  20 " + "</span>"
 
     if (result >= 10) {
@@ -100,7 +99,7 @@ else {
         if (id) {
 
             localStorage.removeItem("user_id")
-            location.href = "login.html"
+            location.href = "../Index.html"
 
         }
         else {

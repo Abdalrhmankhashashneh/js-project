@@ -115,7 +115,7 @@ const signup = (e) => {
   if (op) {
 
 
-    var input = document.getElementsByClassName('in')
+
     var n = formdata.fname + formdata.lname;
     var a = []
     var x = new user(n, formdata.email, formdata.pwd, 0, a)
