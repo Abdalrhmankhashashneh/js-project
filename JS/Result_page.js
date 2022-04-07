@@ -1,4 +1,8 @@
+
 var id = localStorage.getItem("user_id")
+
+
+
 if (id === null) {
     location.href = ("../Index.html")
 }
