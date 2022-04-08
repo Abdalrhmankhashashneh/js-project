@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .button1 {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 5px 2px 4px;
+            cursor: pointer;
+            border-radius: 15px;
+            background-color: #FF7900;
+        }
+
+        .logout_btn {
+            background-color: #FF7900;
+            cursor: pointer;
+            border-radius: 3px;
+            padding: 10px 15px;
+            font-weight: bold;
+            margin-top: 5px;
+            font-size: medium;
+        }
+
+        #h2 {
+            font-size: xx-large;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            background-color: antiquewhite;
+            border-radius: 10px;
+
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #card {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 80%;
+            flex-direction: column;
+            background-color: rgb(255, 251, 244);
+        }
+
+        .card {
+            display: flex;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 80%;
+            margin: 5px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        #name {
+            font-size: xx-large;
+            text-transform: capitalize;
+
+        }
+
+        .d {
+            font-size: x-large;
+            font-weight: 700;
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logout">
+        <button class="button button1" onclick="home()">logout</button>
+    </div>
+    <h2 id="h2">Users</h2>
+
+    <div id="card">
+
+    </div>
+    <script src="JS/admin.js"></script>
+    <script src="JS/Result_page.js"></script>
+</body>
+
+</html>

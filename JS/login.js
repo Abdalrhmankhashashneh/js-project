@@ -19,11 +19,16 @@ else {
             var pas = ob.password;
             if (checkemail(email, em) && checkpass(password, pas)) {
                 localStorage.setItem("user_id", user_id)
-                if (ob.result == 0) {
-                    location.href = "welcomepage.html"
+                if (user_id == 0) {
+                    location.href = "../admin.html"
                 }
                 else {
-                    location.href = "Result_page.html"
+                    if (ob.result == 0) {
+                        location.href = "welcomepage.html"
+                    }
+                    else {
+                        location.href = "Result_page.html"
+                    }
                 }
             }
             else {

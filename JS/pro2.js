@@ -78,7 +78,8 @@ const signup = (e) => {
 
     document.getElementById("3").style.color = "red";
     document.getElementById("3").innerHTML = "password must have one special character at least"
-  } else {
+  }
+  else {
     document.getElementById("3").style.color = "green";
     document.getElementById("3").innerHTML = "&#10003;";
   }
